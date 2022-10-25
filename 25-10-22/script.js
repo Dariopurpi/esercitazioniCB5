@@ -2,8 +2,8 @@ let firstNum = prompt("inserisci primo numero");
 let mathSign = prompt("inserisci simbolo matematico (es. + - * / )");
 let secondNum = prompt("inserisci secondo numero");
 
-let firstNumParse = parseInt(firstNum);
-let secondNumParse = parseInt(secondNum);
+let firstNumParse = parseFloat(firstNum);
+let secondNumParse = parseFloat(secondNum);
 
 if (mathSign == "+") {
   console.log(firstNumParse + secondNumParse);
