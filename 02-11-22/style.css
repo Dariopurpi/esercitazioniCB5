@@ -1,11 +1,13 @@
-body {
+/*.cards {
   border: 2px solid;
-  width: 300px;
+  width: 200px;
+  height: 200px;
+}
+.hero {
   display: flex;
   text-align: center;
 }
-
-img {
-  width: 200px;
-  border: 2px solid red;
+.img {
+  width: 100px;
+  height: 100px;
 }
