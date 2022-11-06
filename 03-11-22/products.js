@@ -437,8 +437,7 @@ const products = [
   {
     id: 24,
     title: "cereals muesli fruit nuts",
-    description:
-      "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
+    description: "original fauji cereal muesli 250gm box pack ",
     price: 46,
     discountPercentage: 16.8,
     rating: 4.94,
@@ -534,26 +533,7 @@ const products = [
       "https://dummyjson.com/image/i/products/28/thumbnail.jpg",
     ],
   },
-  {
-    id: 29,
-    title: "Handcraft Chinese style",
-    description:
-      "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
-    price: 60,
-    discountPercentage: 15.34,
-    rating: 4.44,
-    stock: 7,
-    brand: "luxury palace",
-    category: "home-decoration",
-    thumbnail: "https://dummyjson.com/image/i/products/29/thumbnail.webp",
-    images: [
-      "https://dummyjson.com/image/i/products/29/1.jpg",
-      "https://dummyjson.com/image/i/products/29/2.jpg",
-      "https://dummyjson.com/image/i/products/29/3.webp",
-      "https://dummyjson.com/image/i/products/29/4.webp",
-      "https://dummyjson.com/image/i/products/29/thumbnail.webp",
-    ],
-  },
+
   {
     id: 30,
     title: "Key Holder",

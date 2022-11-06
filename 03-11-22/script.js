@@ -1,25 +1,73 @@
 import products from "./products.js";
 //console.log(products);
-
-const createCard = (data) => {
-  const allProducts = document.querySelector(".All__products");
+const smartphones = document.querySelector(".smartphones");
+const laptops = document.querySelector(".latpops");
+const other = document.querySelector(".other");
+const createCardSmartphone = (data) => {
   const cards = document.createElement("div");
 
-  const allProductsTitle = document.createElement("h5");
-  const allProductsImg = document.createElement("img");
-  const allProductsPar = document.createElement("p");
+  const smartphonesTitle = document.createElement("h5");
+  const smartphonesImg = document.createElement("img");
+  const smartphonesPar = document.createElement("p");
 
-  allProductsTitle.textContent = data.title;
+  smartphonesTitle.textContent = data.title;
   cards.className = "cards";
-  allProductsImg.setAttribute("src", data.thumbnail);
-  allProductsImg.setAttribute("alt", data.description);
-  allProductsPar.textContent = data.description;
+  smartphonesImg.setAttribute("src", data.thumbnail);
+  smartphonesImg.setAttribute("alt", data.description);
+  smartphonesPar.textContent = data.description;
 
   //appendo elemento al
-  cards.append(allProductsTitle, allProductsImg, allProductsPar);
-  allProducts.appendChild(cards);
+  cards.append(smartphonesTitle, smartphonesImg, smartphonesPar);
+  smartphones.appendChild(cards);
 };
-products.map((product) => createCard(product));
+//------creo sezione smarphone
+products.filter((product) => {
+  product.category === "smartphones" && createCardSmartphone(product);
+});
+//------creo sezione laptops
+const createCardLaptop = (data) => {
+  const cards = document.createElement("div");
+
+  const laptopTitle = document.createElement("h5");
+  const laptopImg = document.createElement("img");
+  const laptopPar = document.createElement("p");
+
+  laptopTitle.textContent = data.title;
+  cards.className = "cards";
+  laptopImg.setAttribute("src", data.thumbnail);
+  laptopImg.setAttribute("alt", data.description);
+  laptopPar.textContent = data.description;
+
+  //appendo elemento al
+  cards.append(laptopTitle, laptopImg, laptopPar);
+  laptops.appendChild(cards);
+};
+products.filter((product) => {
+  product.category === "laptops" && createCardLaptop(product);
+});
+
+//-------creo sezione other
+const createCardOther = (data) => {
+  const cards = document.createElement("div");
+
+  const otherTitle = document.createElement("h5");
+  const otherImg = document.createElement("img");
+  const otherPar = document.createElement("p");
+
+  otherTitle.textContent = data.title;
+  cards.className = "cards";
+  otherImg.setAttribute("src", data.thumbnail);
+  otherImg.setAttribute("alt", data.description);
+  otherPar.textContent = data.description;
+
+  //appendo elemento al
+  cards.append(otherTitle, otherImg, otherPar);
+  other.appendChild(cards);
+};
+products.filter((product) => {
+  if (product.category != "laptops" && product.category != "smartphones")
+    createCardOther(product);
+});
 
 //dark mode
 
@@ -27,35 +75,4 @@ const mainEl = document.querySelector("main", "h1");
 const button = document.querySelector("button");
 button.addEventListener("click", () => mainEl.classList.toggle("darkmode"));
 
-//prove per rimuovere al click figli all products e aggiungere category=fragrance
-/*const allProducts = document.querySelector(".All__products");
-const fragrancesEl = document.querySelector("#fragrances");
-console.log(fragrancesEl);
-fragrancesEl.addEventListener("click", () => {
-  const cards = document.querySelector(".cards");
-  allProducts.remove(cards);
-  products.forEach((element) => {
-    if (element.category === "fragrances") {
-      products.map((element) => {
-        if (element.category === "fragrances") {
-          const allProducts2 = document.querySelector(".All__products");
-          const cards2 = document.createElement("div");
-
-          const allProducts2Title = document.createElement("h5");
-          const allProducts2Img = document.createElement("img");
-          const allProducts2Par = document.createElement("p");
-
-          allProducts2Title.textContent = element.title;
-          cards2.className = "cards2";
-          allProducts2Img.setAttribute("src", element.thumbnail);
-          allProducts2Img.setAttribute("alt", element.description);
-          allProducts2Par.textContent = element.description;
-
-          //appendo elemento al
-          cards2.append(allProducts2Title, allProducts2Img, allProducts2Par);
-          allProducts2.appendChild(cards2);
-        }
-      });
-    }
-  });
-});*/
+//modale
