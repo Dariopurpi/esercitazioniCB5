@@ -1,0 +1,11 @@
+.cards {
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.pokedex {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
