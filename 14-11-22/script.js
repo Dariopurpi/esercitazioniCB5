@@ -28,4 +28,4 @@ btnprev.addEventListener("click", () => {
     btnprev.disabled = true;
   }
 });
-window.onload(createCard(GET(`${url}${i}`)));
+//window.onload(createCard(GET(`${url}${i}`)));
