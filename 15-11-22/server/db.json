@@ -1,0 +1,14 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Bulbasariddu",
+      "type": "grass"
+    },
+    {
+      "id": "9df34938-b4db-445e-a611-a00aa4cff1f8",
+      "name": "pikachu",
+      "type": "elettrico"
+    }
+  ]
+}
