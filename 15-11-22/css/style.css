@@ -5,8 +5,18 @@ form {
   flex-direction: column;
   padding: 10px;
 }
+ul {
+  display: flex;
+  gap: 20px;
+}
 li {
+  width: 150px;
   padding: 2px;
   margin-top: 15px;
   border: 1px solid;
+  display: flex;
+  flex-direction: column-reverse;
+}
+li img {
+  width: 100px;
 }

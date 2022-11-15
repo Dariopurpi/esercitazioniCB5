@@ -17,18 +17,23 @@ const POST = async (BASE_URL, body) => {
   });
 };
 
-// API
-/**
- * Create an unique hash code
- * @returns string
- */
-function uuidv4() {
-  return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
-    (
-      c ^
-      (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))
-    ).toString(16)
-  );
-}
+const createCard = (pokemon) => {
+  const cards = c("li");
+  const img = c("img");
+  const namePoke = c("h4");
+  const typePoke = c("p");
+  const id = c("p");
 
-export { c, q, GET, POST, uuidv4 };
+  const pokedex = q(".pokemonList");
+  img.setAttribute("src", "https://picsum.photos/200/300");
+  namePoke.textContent = `${"nome:"} ${pokemon.name}`;
+  typePoke.textContent = `${"tipo:"} ${pokemon.type}`;
+  id.textContent = `${"id :"} ${pokemon.id}`;
+
+  //appendo elemento al
+
+  cards.append(namePoke, typePoke, id, img);
+  pokedex.appendChild(cards);
+};
+
+export { c, q, GET, POST, createCard };

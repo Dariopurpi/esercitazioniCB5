@@ -6,9 +6,14 @@
       "type": "grass"
     },
     {
-      "id": "9df34938-b4db-445e-a611-a00aa4cff1f8",
-      "name": "pikachu",
-      "type": "elettrico"
+      "id": "2",
+      "name": "ivysaur",
+      "type": "grass"
+    },
+    {
+      "id": "3",
+      "name": "def",
+      "type": "fefefef"
     }
   ]
 }

@@ -1,4 +1,4 @@
-import { c, q, GET, POST, uuidv4 } from "./utils.js";
+import { c, q, GET, POST, createCard } from "./utils.js";
 
 const url = "http://localhost:3000/pokemon";
 
@@ -10,7 +10,7 @@ const ul = q(".pokemonList");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const data = {
-    id: uuidv4(),
+    id: element.pkmId.value,
     name: element.pkmName.value,
     type: element.pkmType.value,
   };
@@ -26,9 +26,4 @@ form.addEventListener("submit", (e) => {
 });
 
 const type = element.pkmType.value;
-window.onload = GET(url).then((res) =>
-  res.map(
-    (pkm) =>
-      (ul.innerHTML += `<li>id: ${pkm.id}: ${pkm.name} type = ${pkm.type}</li></li>`)
-  )
-);
+window.onload = GET(url).then((res) => res.map((pkm) => createCard(pkm)));
