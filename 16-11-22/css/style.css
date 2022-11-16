@@ -1,0 +1,67 @@
+/*
+
+	1. GENERAL
+	2. FORM
+  3. CARDS
+  4. AVANZATO
+*/
+
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* FORM */
+
+.form {
+  align-items: center;
+  background-color: lightgray;
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* CARDS */
+
+.cards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.list__card {
+  list-style: none;
+}
+
+.list__card div {
+  border: 2px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  width: 500px;
+}
+
+/*list__card-adv avanzato*/
+
+.list__card-adv {
+  border: 1px dotted;
+  width: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  border-radius: 10px;
+}
+.list__card-adv img {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.cards__list {
+  display: flex;
+  gap: 60px;
+}

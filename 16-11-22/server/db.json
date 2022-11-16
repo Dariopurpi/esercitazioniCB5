@@ -1,0 +1,19 @@
+{
+  "pokemon": [
+    {
+      "id": "505811f2-8abe-4059-9e54-9afc3374f11f",
+      "name": "bulbasaur",
+      "type": "grass"
+    },
+    {
+      "id": "0fa0dc9f-0bd6-4a34-a6aa-5641a933be3a",
+      "name": "ivysaur",
+      "type": "grass"
+    },
+    {
+      "id": "230e5540-5e5c-40cf-bfc6-7ca044fd23bb",
+      "name": "pikachu",
+      "type": "elettrico"
+    }
+  ]
+}
