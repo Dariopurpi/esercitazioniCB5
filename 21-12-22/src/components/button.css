@@ -1,0 +1,20 @@
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.button--variant-black {
+  background-color: black;
+  color: white;
+}
+
+.button--variant-red {
+  background-color: red;
+  color: black;
+}
+
+.button--variant-green {
+  background-color: green;
+  color: black;
+}
