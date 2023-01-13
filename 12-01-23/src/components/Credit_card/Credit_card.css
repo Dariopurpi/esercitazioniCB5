@@ -1,0 +1,17 @@
+.containerCredit_Card {
+  border: 1px solid;
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+  height: 200px;
+  width: 20rem;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+}
+
+.cardCredit_Card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}

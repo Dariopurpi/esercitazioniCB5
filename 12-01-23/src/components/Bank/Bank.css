@@ -1,0 +1,12 @@
+.sectionBank {
+  background-color: black;
+  color: white;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.containerBank,
+.cardBank {
+  border-bottom: 1px solid;
+}
