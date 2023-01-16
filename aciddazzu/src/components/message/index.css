@@ -1,0 +1,21 @@
+.element {
+  display: flex;
+  border-bottom: 2px solid;
+}
+.element img {
+  margin: 15px 10px;
+  border: 2px solid;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: aquamarine;
+}
+
+.elementUser {
+  height: 100px;
+}
+
+.elementText {
+  padding: 10px 8px;
+  border-left: 2px solid lightgray;
+}
