@@ -1,21 +1,21 @@
 .element {
   display: flex;
-  border-bottom: 2px solid;
+
+  flex-direction: column;
 }
-.element img {
-  margin: 15px 10px;
-  border: 2px solid;
-  height: 100px;
-  width: 100px;
+.elementUser img {
+  width: 40px;
   border-radius: 100%;
-  background-color: aquamarine;
+  background-color: black;
 }
 
 .elementUser {
-  height: 100px;
+  background-color: rgb(58, 233, 18);
+  padding-top: 10px;
 }
 
 .elementText {
-  padding: 10px 8px;
-  border-left: 2px solid lightgray;
+  padding: 8px;
+  background-color: black;
+  color: white;
 }

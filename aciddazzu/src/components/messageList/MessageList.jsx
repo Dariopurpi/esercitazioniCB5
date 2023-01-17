@@ -10,7 +10,13 @@ const MessagesList = () => {
     GET("posts").then((res) => setMsgList(res.posts));
   }, []);
 
-  return msgList.map((item) => <Message data={item} />);
+  return (
+    <div className="MessagesList">
+      {msgList.map((item) => (
+        <Message data={item} key={item.id} />
+      ))}
+    </div>
+  );
 };
 
 export default MessagesList;
