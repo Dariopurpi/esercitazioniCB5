@@ -3,12 +3,18 @@ import { GET } from "../../utils/http";
 import Message from "../message/Message";
 import "./index.css";
 
-const MessagesList = () => {
+const MessagesList = ({ titleFilter }) => {
   const [msgList, setMsgList] = useState([]);
 
+  console.log(msgList);
+
   useEffect(() => {
-    GET("posts").then((res) => setMsgList(res.posts));
-  }, []);
+    GET("posts").then((res) =>
+      setMsgList(res.posts.filter((post) => post.title.includes(titleFilter)))
+    );
+  }, [titleFilter]);
+
+  console.log(titleFilter);
 
   return (
     <div className="MessagesList">

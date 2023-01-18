@@ -20,6 +20,11 @@ const Message = ({ data }) => {
           <h4>{data.title}</h4>
           <p>{data.body}</p>
         </div>
+        <div className="reaction">
+          <span className="material-symbols-outlined">favorite</span>
+          <span className="material-symbols-outlined">menu</span>
+          <span className="material-symbols-outlined">message</span>
+        </div>
       </div>
     </Fragment>
   );

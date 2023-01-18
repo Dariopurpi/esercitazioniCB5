@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { GET } from "../../utils/http";
 import Friend from "../friend/friend";
 
+import "./index.css";
+
 const FriendList = () => {
   const [friendList, setFriendList] = useState([]);
 

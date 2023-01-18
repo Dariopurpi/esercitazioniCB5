@@ -14,8 +14,17 @@
   padding-top: 10px;
 }
 
+.elementUser p,
+.elementUser img {
+  padding: 4px;
+}
+
 .elementText {
   padding: 8px;
   background-color: black;
   color: white;
+}
+
+.elementText h4 {
+  padding: 0 0 8px;
 }

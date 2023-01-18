@@ -1,0 +1,11 @@
+.FriendsList {
+  display: flex;
+  overflow-x: hidden;
+  overflow-x: scroll;
+}
+@media screen and (min-width: 768px) {
+  .FriendsList {
+    flex-direction: column;
+    width: 25vw;
+  }
+}

@@ -1,5 +1,22 @@
+* {
+  margin: 0;
+}
+
 .App {
   text-align: center;
   display: flex;
-  flex-direction: column;
+}
+
+.friendsSection {
+  border: 1px solid red;
+}
+
+.mainSection {
+  border: 1px solid blue;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
 }
