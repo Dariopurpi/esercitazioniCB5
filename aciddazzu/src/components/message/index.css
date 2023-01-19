@@ -1,30 +1,37 @@
 .element {
   display: flex;
-
   flex-direction: column;
+  border-top: 12px solid gray;
 }
+
+.elementUser {
+  gap: 10px;
+  display: flex;
+}
+
 .elementUser img {
+  margin: 8px;
   width: 40px;
   border-radius: 100%;
   background-color: black;
 }
 
-.elementUser {
-  background-color: rgb(58, 233, 18);
-  padding-top: 10px;
+.elementUser p {
+  padding-top: 8px;
 }
 
-.elementUser p,
-.elementUser img {
-  padding: 4px;
+.elementImg {
+  width: 100%;
 }
-
 .elementText {
-  padding: 8px;
-  background-color: black;
-  color: white;
+  padding: 0 0 14px 8px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.elementText h4 {
-  padding: 0 0 8px;
+.reaction {
+}
+
+.reaction span {
+  font-size: 12px;
 }

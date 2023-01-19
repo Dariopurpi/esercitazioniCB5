@@ -1,0 +1,10 @@
+.FriendContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FriendContent img {
+  width: 170px;
+  border: 1px solid;
+}

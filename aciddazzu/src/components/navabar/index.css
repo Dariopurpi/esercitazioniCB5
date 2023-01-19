@@ -1,0 +1,14 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #3b5998;
+  position: fixed;
+  width: 95%;
+  height: 45px;
+}
+.NavBarElement {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.7rem;
+}

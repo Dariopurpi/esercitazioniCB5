@@ -22,6 +22,7 @@ const Filter = ({ setTitleFilter }) => {
         placeholder="Cerca per titolo..."
         onChange={onHandleChange}
       />
+      <input type="submit" onSubmit={onHandleChange} value="show all" />
     </form>
   );
 };

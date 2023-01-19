@@ -5,18 +5,27 @@
 .App {
   text-align: center;
   display: flex;
+  flex-direction: column;
+}
+.modal {
+  position: relative;
+  left: 20%;
+}
+.post {
+  margin-top: 85px;
 }
 
 .friendsSection {
-  border: 1px solid red;
 }
 
 .mainSection {
-  border: 1px solid blue;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .App {
-    flex-direction: column;
+    display: flex;
+  }
+  main {
+    display: flex;
   }
 }

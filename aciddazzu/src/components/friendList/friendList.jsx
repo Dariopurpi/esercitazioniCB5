@@ -4,7 +4,7 @@ import Friend from "../friend/friend";
 
 import "./index.css";
 
-const FriendList = () => {
+const FriendList = ({ setModalEnabled, setModalContent }) => {
   const [friendList, setFriendList] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,12 @@ const FriendList = () => {
   return (
     <div className="FriendsList">
       {friendList.map((friend) => (
-        <Friend data={friend} key={friend.id} />
+        <Friend
+          setModalContent={setModalContent}
+          setModalEnabled={setModalEnabled}
+          data={friend}
+          key={friend.id}
+        />
       ))}
     </div>
   );

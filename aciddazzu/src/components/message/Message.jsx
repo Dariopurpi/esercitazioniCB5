@@ -8,6 +8,8 @@ const Message = ({ data }) => {
   useEffect(() => {
     GET(`users/${data.userId}`).then((user) => setUser(user));
   }, [data.userId]);
+  const imagePost = "https://picsum.photos/373?";
+  const comment = "Commenta";
 
   return (
     <Fragment>
@@ -18,12 +20,14 @@ const Message = ({ data }) => {
         </div>
         <div className="elementText">
           <h4>{data.title}</h4>
-          <p>{data.body}</p>
+        </div>
+        <div className="elementImg">
+          <img src={`${imagePost}+ ${user.id}`} alt={user.firstName} />
         </div>
         <div className="reaction">
-          <span className="material-symbols-outlined">favorite</span>
-          <span className="material-symbols-outlined">menu</span>
-          <span className="material-symbols-outlined">message</span>
+          <span className="material-symbols-outlined">thumb_up </span>
+          <span className="material-symbols-outlined">chat </span>
+          <span className="material-symbols-outlined">send </span>
         </div>
       </div>
     </Fragment>

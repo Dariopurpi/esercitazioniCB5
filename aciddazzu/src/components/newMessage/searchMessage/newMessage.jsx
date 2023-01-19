@@ -41,19 +41,19 @@ const NewMessage = () => {
   return (
     <div className="NewMessage">
       <form onSubmit={onSubmit}>
-        <input
+        {/* <input
           value={authorMessage}
           type="text"
           onChange={onHandleAuthor}
           placeholder="Inserisci Autore"
-        />
+        /> */}
         <input
           value={postMessage}
           type="text"
           onChange={onHandlePostMessage}
-          placeholder="Inserisci Testo"
+          placeholder="A cosa stai pensando?"
         />
-        <input
+        {/* <input
           value={titleMessage}
           type="text"
           onChange={onHandleTitleMessage}
@@ -64,7 +64,7 @@ const NewMessage = () => {
           type="text"
           onChange={onHandleURLMessage}
           placeholder="Inserisci url foto"
-        />
+        /> */}
         <input type="submit" value="Upload" />
       </form>
     </div>
