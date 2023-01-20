@@ -2,6 +2,8 @@
   display: flex;
   overflow-x: hidden;
   overflow-x: scroll;
+  padding: 12px;
+  border: 1px solid blue;
 }
 @media screen and (min-width: 768px) {
   .FriendsList {

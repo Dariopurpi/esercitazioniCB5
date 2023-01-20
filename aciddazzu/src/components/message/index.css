@@ -30,8 +30,11 @@
 }
 
 .reaction {
+  display: flex;
+  justify-content: space-around;
 }
 
 .reaction span {
-  font-size: 12px;
+  padding: 5px;
+  font-size: 30px;
 }

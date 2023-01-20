@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { POST } from "../../../utils/http";
+import { POST } from "../../utils/http";
 import "./index.css";
 
 const NewMessage = () => {
