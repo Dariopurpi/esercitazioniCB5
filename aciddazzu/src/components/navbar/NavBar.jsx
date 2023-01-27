@@ -33,15 +33,19 @@ const NavBar = ({ isModalEnabled, onHandleModal, logged }) => {
           <div className="NavBarElement">
             <Button isModalEnabled={isModalEnabled} func={onHandleModal} />
             <ButtonPost />
-            <p>{name}</p>
-            <img src={imgProfile} alt="" />
-            <form action="/">
-              <input
-                type="submit"
-                value="log out"
-                onClick={() => localStorage.clear()}
-              />
-            </form>
+            <div className="profile">
+              <img src={imgProfile} alt="" />
+              <div className="NavBarProfile">
+                <p>{name}</p>
+                <form action="/">
+                  <input
+                    type="submit"
+                    value="log out"
+                    onClick={() => localStorage.clear()}
+                  />
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </>

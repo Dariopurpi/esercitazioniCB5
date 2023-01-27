@@ -1,14 +1,43 @@
 .NavBar {
   display: flex;
-  justify-content: space-between;
-  padding: 15px;
+  justify-content: space-around;
+  padding: 15px 0;
   background-color: #3b5998;
   position: fixed;
-  width: 95%;
+  width: 100vw;
   height: 45px;
+  z-index: 999;
 }
 .NavBarElement {
   display: flex;
   flex-direction: row-reverse;
   gap: 0.7rem;
+}
+.profile {
+  display: flex;
+  gap: 10px;
+}
+
+.profile img {
+  border-radius: 100%;
+}
+
+.NavBarProfile {
+  text-align: start;
+}
+
+.NavBarProfile form input {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .NavBar {
+    justify-content: space-evenly;
+  }
 }

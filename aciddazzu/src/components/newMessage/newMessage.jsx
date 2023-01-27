@@ -65,7 +65,7 @@ const NewMessage = () => {
           onChange={onHandleURLMessage}
           placeholder="Inserisci url foto"
         /> */}
-        <input type="submit" value="Upload" />
+        <input type="submit" value="Pubblica" />
       </form>
     </div>
   );

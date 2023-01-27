@@ -2,6 +2,7 @@
   position: fixed;
   transition: all 2s;
   animation: fadeIn 1s;
+  z-index: 999;
 }
 
 .overlay {

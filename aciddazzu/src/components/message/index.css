@@ -22,6 +22,7 @@
 
 .elementImg {
   width: 100%;
+  border-bottom: 2px solid lightgray;
 }
 .elementText {
   padding: 0 0 14px 8px;
@@ -37,4 +38,10 @@
 .reaction span {
   padding: 5px;
   font-size: 30px;
+  cursor: pointer;
+}
+
+.like {
+  color: #0552fa;
+  font-size: 10px;
 }

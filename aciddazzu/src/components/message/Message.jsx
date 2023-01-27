@@ -4,6 +4,11 @@ import "./index.css";
 
 const Message = ({ data }) => {
   const [user, setUser] = useState({});
+  const [like, setLike] = useState(false);
+
+  const onLike = () => {
+    setLike((prev) => !prev);
+  };
 
   useEffect(() => {
     GET(`users/${data.userId}`).then((user) => setUser(user));
@@ -12,7 +17,7 @@ const Message = ({ data }) => {
   const comment = "Commenta";
 
   return (
-    <Fragment>
+    <>
       <div className="element">
         <div className="elementUser">
           <img src={user.image} alt={user.firstName} />
@@ -25,12 +30,21 @@ const Message = ({ data }) => {
           <img src={`${imagePost}+ ${user.id}`} alt={user.firstName} />
         </div>
         <div className="reaction">
-          <span className="material-symbols-outlined">thumb_up </span>
+          <span
+            onClick={onLike}
+            className={
+              like
+                ? "material-symbols-outlined like"
+                : "material-symbols-outlined"
+            }
+          >
+            {like ? "thumb_up" : "thumb_up"}
+          </span>
           <span className="material-symbols-outlined">chat </span>
           <span className="material-symbols-outlined">send </span>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

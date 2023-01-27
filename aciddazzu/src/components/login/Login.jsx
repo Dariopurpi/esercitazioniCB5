@@ -27,9 +27,10 @@ const Login = () => {
     <div className="Login">
       <form className="LoginForm">
         <h1>Log in</h1>
+        <h3>Inserisci Username e Password corretti</h3>
         <input
           type="text"
-          placeholder="Nome utente..."
+          placeholder="Username..."
           onChange={(e) =>
             setLoginState((prev) => ({ ...prev, username: e.target.value }))
           }
@@ -42,13 +43,6 @@ const Login = () => {
           }
         />
         <input type="submit" value="Send" onClick={submitSend} />
-        <p>
-          per la correzione dell'esercitazione: username:Dario password:Purpi
-        </p>
-        <p>
-          so che saresti entrato lo stesso ma l'ho scritto per velocizzarti il
-          tutto
-        </p>
       </form>
     </div>
   );

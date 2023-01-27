@@ -6,12 +6,17 @@ const Friend = ({ data, setModalContent, setModalEnabled }) => {
     setModalContent(id);
     setModalEnabled(true);
   };
+  const background = `https://picsum.photos/92/162?${id}`;
 
   return (
     <div className="Friend" onClick={onHandleClick}>
-      <img src={image} alt={lastName} />
+      <img className="FriendBackground" src={background} alt="" />
+
+      <div className="Friend___Img">
+        <img id="profile" src={image} alt={lastName} />
+      </div>
       <div className="Friend__text">
-        <h4>{`${firstName} ${lastName}`}</h4>
+        <p>{firstName}</p> <p>{lastName}</p>
       </div>
     </div>
   );
