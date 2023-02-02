@@ -1,0 +1,22 @@
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid ;
+    border-radius: 5px; 
+   
+
+.galleryImage{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 1000px;
+    height: 420px;
+    overflow-x: hidden;
+    overflow-x: scroll; 
+    cursor: pointer;
+:hover{
+    transform: scale(1.1);
+   transition: 0.35s;
+}
+}}
